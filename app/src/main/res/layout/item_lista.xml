@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginLeft="7dp"
+    android:background="?android:attr/selectableItemBackground" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/sem_programacao"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center"/>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:gravity="center_horizontal"
+            android:text="Titulo"
+            style="@style/titulo_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="descriçãomds oafoa sof oafo ao"
+            android:id="@+id/descricao"
+            style="@style/descricao_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/inicio"
+                android:text="10:00"
+                style="@style/hora_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/fim"
+                android:text="10:00"
+                style="@style/hora_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vw_divider"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/titulo"
+            android:layout_below="@+id/textHoraInicio"
+            android:background="@color/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

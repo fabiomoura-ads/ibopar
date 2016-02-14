@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Ibopar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="btnGostar">Gostei</string>
+    <string name="btnNaoGostei">Nao Gostei</string>
+    <string name="avaliacao">Obrigado pela avaliação!</string>
+    <string name="acessar">Acessar</string>
+    <string name="cadastrar">Cadastrar-se</string>
+
+</resources>

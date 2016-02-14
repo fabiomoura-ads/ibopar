@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.projeto.ibopar.MainActivity" >
+
+    <!-- LINEAR GERAL -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="14.5" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="10">
+
+            <ImageView
+                android:id="@+id/imageLogoPrograma"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/sem_programacao" />
+
+            <TextView
+                android:id="@+id/textTituloProgramacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/titulo" />
+
+            <TextView
+                android:id="@+id/textDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/descricao" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textHoraInicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/hora" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  ---  "  />
+
+                <TextView
+                    android:id="@+id/textHoraFim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/hora" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textFeedBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center|center_vertical"
+            android:layout_gravity="center"
+            style="@style/feedTitle"
+            android:text="Sem programação para avaliação!" />
+
+        <!-- LINEAR DOS BOTOES -->
+
+        <LinearLayout
+            android:id="@+id/linearAvaliacao"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_weight="2.5"
+            android:gravity="center_vertical"  >
+
+            <ImageView
+                android:id="@+id/avPositiva"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_positivo_off"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/avNegativa"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_negativo_off"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <!-- LINEAR DOS FEEDBACKS -->
+
+        <LinearLayout
+            android:id="@+id/linearFeedBack"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_weight="0.6"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textQtdAv_positiva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                style="@style/feed"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textQtdAv_negativa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                style="@style/feed"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/snk"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
